@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Library</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="appWrapper">
+        <form method="post" enctype=multipart/form-data>
+
+            <h1 class="homeLibraryHeader">Home Library</h1>
+
+            <label class="label_book" for="name">Назва книги: </label>
+            <input type="text" id="namebook" name="namebook"><br>
+
+            <label class="label_book" for="author">Автор: </label>
+            <input type="text" id="authorbook" name="authorname"><br>
+
+            <label class="label_book" for="year">Рік видання: </label>
+            <input type="number" id="yearbook" name="yearbook"><br>
+
+            <label class="label_book" for="description">Опис</label>
+            <textarea cols=80 rows=4 type="textbox" id="description" name="description"
+                placeholder="Опис..."></textarea><br>
+
+            <label class="label_book" for="img">Зображення</label>
+            <input type="file" name="file">
+
+            <p>
+                <button class="save_button" type="submit" value="save">Зберегти дані</button>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
