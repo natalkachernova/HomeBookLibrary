@@ -1,0 +1,21 @@
+GET http://localhost:5000/api/v1/bookslibrary/
+
+#POST http://localhost:5000/api/v1/bookslibrary/
+#Content-Type: application/json
+
+#{
+ #"namebook": "Вбивство у східному експресі",
+ #"author": "Агата Крісті",
+ #"yearbook": 1933,
+ #"coverimage": "image2.jpg",
+ #"description": "Книга Вбивство у східному експресі"
+#}
+
+#DELETE http://localhost:5000/api/v1/bookslibrary/0
+
+#PUT http://localhost:5000/api/v1/bookslibrary/0
+#Content-Type: application/json
+
+#{
+#    "description": "Вбивство у східному експресі"
+#}
