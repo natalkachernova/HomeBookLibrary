@@ -64,10 +64,10 @@ def update_book(book_id):
   ]):
     abort(400)
   namebook = {
-      'namebook': data.get('title', namebook['namebook']),
-      'author': data.get('title', namebook['author']),
-      'yearbook': data.get('title', namebook['yearbook']),
-      'coverimage': data.get('title', namebook['coverimage']),
+      'namebook': data.get('namebook', namebook['namebook']),
+      'author': data.get('author', namebook['author']),
+      'yearbook': data.get('yearbook', namebook['yearbook']),
+      'coverimage': data.get('coverimage', namebook['coverimage']),
       'description': data.get('description', namebook['description'])
   }
   bookslibrary.update(book_id, namebook)
